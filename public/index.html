@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>Podcast Cover Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>העלאת קובץ אודיו</h2>
+
+        <input id="audioInput" type="file" accept="audio/*">
+        <p id="fileInfo"></p>
+        <p id="uploadStatus"></p>
+
+        <button id="uploadBtn">העלה</button>
+        <button id="analyzeBtn">נתח אודיו</button>
+        <button id="generateCoversBtn">צור תמונות Cover</button>
+        <p id="analysisResult"></p>
+
+        <h3>תמונות Cover:</h3>
+        <div id="coverGrid" class="cover-grid"></div>
+        <button id="downloadAllBtn">הורד הכל כ-ZIP</button>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
